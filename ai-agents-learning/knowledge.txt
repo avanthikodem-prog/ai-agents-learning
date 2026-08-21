@@ -1,0 +1,9 @@
+LangChain is an open-source framework for building applications powered by large language models.
+
+LangChain provides components for prompts, models, tools, agents, retrieval, and document processing.
+
+Ollama allows developers to run large language models locally on their computers.
+
+RAG stands for Retrieval-Augmented Generation. RAG allows an AI application to retrieve relevant information from external documents before generating an answer.
+
+An AI agent can use tools to perform actions such as calculations, searching information, calling APIs, and working with databases.
