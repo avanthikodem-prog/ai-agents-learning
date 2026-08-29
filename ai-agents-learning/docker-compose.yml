@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    container_name: ai-agents-api
+
+    ports:
+      - "8000:8000"
+
+    environment:
+      OLLAMA_URL: http://host.docker.internal:11434/api/chat

@@ -12,7 +12,7 @@ class ChatRequest(BaseModel):
 
 
 def ollama_stream(prompt: str):
-    url = "http://localhost:11434/api/chat"
+    url = "http://host.docker.internal:11434/api/chat"
 
     data = {
         "model": "llama3.2",
