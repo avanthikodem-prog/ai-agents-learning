@@ -30,12 +30,11 @@ jobs:
           pip install -r requirements.txt
 
       - name: Check Python syntax
-      - name: Check Python syntax
-  run: |
-    python -m py_compile python/api_test.py
-    python -m py_compile python/ollama_test.py
-    python -m py_compile python/prompt_examples.py
-    python -m py_compile python/system_prompt_test.py
+        run: |
+          python -m py_compile python/api_test.py
+          python -m py_compile python/ollama_test.py
+          python -m py_compile python/prompt_examples.py
+          python -m py_compile python/system_prompt_test.py
 
       - name: Build Docker image
         run: |
