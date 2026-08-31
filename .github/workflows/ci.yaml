@@ -31,11 +31,8 @@ jobs:
 
       - name: Check Python syntax
         run: |
-          python -m py_compile python/api_test.py
-          python -m py_compile python/ollama_test.py
-          python -m py_compile python/prompt_examples.py
-          python -m py_compile python/system_prompt_test.py
+          python -m compileall -q .
 
       - name: Build Docker image
         run: |
-          docker build -t ai-agents-api:ci .
+          docker build -t ai-agents-learning:ci .
