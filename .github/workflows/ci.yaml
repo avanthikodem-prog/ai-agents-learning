@@ -31,8 +31,8 @@ jobs:
 
       - name: Check Python syntax
         run: |
-          python -m py_compile 20_chat_stream_api.py
-          python -m py_compile 21_docker_ollama.py
+          python -m py_compile python/20_chat_stream_api.py
+          python -m py_compile python/21_docker_ollama.py
 
       - name: Build Docker image
         run: |
