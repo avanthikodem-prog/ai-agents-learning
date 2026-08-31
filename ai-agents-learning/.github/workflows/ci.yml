@@ -5,7 +5,6 @@ on:
     branches:
       - main
       - master
-
   pull_request:
     branches:
       - main
@@ -25,14 +24,16 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
+        working-directory: ai-agents-learning
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Check Python syntax
+        working-directory: ai-agents-learning
         run: |
           python -m compileall -q .
 
       - name: Build Docker image
         run: |
-          docker build -t ai-agents-learning:ci .
+          docker build -t ai-agents-learning:ci -f ai-agents-learning/Dockerfile ai-agents-learning
