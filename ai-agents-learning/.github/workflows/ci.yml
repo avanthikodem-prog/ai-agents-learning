@@ -31,9 +31,8 @@ jobs:
 
       - name: Check Python syntax
         run: |
-          python -m py_compile 20_chat_stream_api.py
-          python -m py_compile 21_docker_ollama.py
+          python -m compileall -q .
 
       - name: Build Docker image
         run: |
-          docker build -t ai-agents-api:ci .
+          docker build -t ai-agents-learning:ci .
