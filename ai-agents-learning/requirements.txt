@@ -2,3 +2,12 @@ fastapi
 uvicorn
 requests
 pydantic
+fastapi
+uvicorn
+requests
+pydantic
+python-dotenv
+langfuse
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation-fastapi
